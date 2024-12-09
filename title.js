@@ -79,7 +79,8 @@ function generateGame(messageTitle, giftAmount) {
             showModalContent('Не расстраивайся, все равно держи подарок, как ты просил - носки', "./images/socks.png")
           }, title.printDelay(modalMessage) + 1000)
           // Очищаем все подарки 
-          setTimeout(() => {
+          const crossIcon = document.querySelector('.modal__cross-icon')
+          crossIcon.addEventListener('click', () => {
             giftContainer.innerHTML = ""
             title.setMessage = "Ладно, не будем тебя больше мучать, ты заслужил этот подарок"
             setTimeout(() => {
@@ -111,7 +112,7 @@ function generateGame(messageTitle, giftAmount) {
                 
               }, 30000)
             }, title.printDelay("Ладно, не будем тебя больше мучать, ты заслужил этот подарок"))
-          }, 15000)
+          })
         }
       });
     });
