@@ -1,0 +1,56 @@
+/* Модальное окно*/
+
+.modal {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.modal__message {
+  padding: 20px;
+  position: relative;
+  background-color: #fff;
+  width: 50%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.modal__title {
+  text-align: center;
+  font-size: 48px;
+  animation: showText 2s ease-in-out alternate;
+}
+
+.modal__cross-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 24px;
+  aspect-ratio: 1;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.modal__image {
+  width: 100%;
+  height: 600px;
+}
+
+@keyframes showText{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

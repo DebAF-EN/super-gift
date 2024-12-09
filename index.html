@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./modal/modal.js" type="module" defer></script>
+  <script src="title.js" type="module" defer></script>
+</head>
+<body>
+  <h1 class="title"></h1>
+  <div class="gift-container"></div>
+  <div class="begin-buttons">
+    <button class="begin-button eightbit-btn eightbit-btn--basic" type="button">погнали!</button>
+    <button class="begin-button eightbit-btn eightbit-btn--proceed" type="button">пожалуй, не сегодня</button>
+    <button class="begin-button eightbit-btn eightbit-btn--reset" type="button">о, а это что за кнопка</button>
+  </div>
+  <!-- Модальное окно -->
+  <div class="modal">
+    <div class="modal__message">
+      <svg class="modal__cross-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><g><g><polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512 512,452.922 315.076,256 "></polygon></g></g></svg>
+      <h2 class="modal__title"></h2>
+      <p class="modal__text"></p>
+      <img class="modal__image" src="" alt="">
+    </div>
+  </div>
+  <span class="gift main-gift"></span>
+  <span class="gift final-gift"></span>
+</body>
+</html>
