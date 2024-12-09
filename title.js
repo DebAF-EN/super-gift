@@ -69,7 +69,7 @@ function generateGame(messageTitle, giftAmount) {
       gift.addEventListener('click', (event) => {
         gift.style.backgroundImage = "url('./images/gift-crossed.png')"
         amountClicks++
-        if (amountClicks === 200) {
+        if (amountClicks === 199) {
           const modalMessage = 'Ну вот и все, ты потратил все свои попытки'
           showModalWindow(modalMessage)
           setTimeout(() => {
